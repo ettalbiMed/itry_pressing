@@ -61,62 +61,75 @@
             <div class="services-ring" aria-hidden="true"></div>
 
             <div class="services-center card">
-                <div class="itri-mark" aria-hidden="true">🧺</div>
+                <div class="itri-mark" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" role="img" aria-label="Logo ITRI">
+                        <path d="M12 22h40" />
+                        <path d="M20 22c0 10 6 16 12 20c6-4 12-10 12-20" />
+                        <path d="M32 42v10" />
+                        <path d="M39 14c4 1 7 4 8 8" />
+                    </svg>
+                </div>
                 <p class="itri-title">ITRI</p>
                 <span class="itri-line" aria-hidden="true"></span>
                 <p class="itri-subtitle">L’atelier du pressing</p>
             </div>
 
-            <div class="services-column left">
-                <article class="service-node card">
-                    <div class="node-icon">🫧</div>
-                    <h3>Pressing naturel</h3>
-                    <p class="node-subtitle">Aqua nettoyage</p>
-                    <ul class="node-list">
-                        <li>✓ Écologique</li>
-                        <li>✓ Sans produits toxiques</li>
-                        <li>✓ Hypoallergénique</li>
-                        <li>✓ Délicat pour les tissus</li>
-                        <li>✓ Respecte les couleurs</li>
-                    </ul>
-                </article>
+            <article class="service-node card node-1">
+                <div class="node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="M12 10h5M12 14h5M7 14h2"/></svg>
+                </div>
+                <h3>Pressing naturel</h3>
+                <p class="node-subtitle">Aqua nettoyage</p>
+                <ul class="node-list">
+                    <li>✓ Écologique</li><li>✓ Sans produits toxiques</li><li>✓ Hypoallergénique</li><li>✓ Délicat pour les tissus</li><li>✓ Respecte les couleurs</li>
+                </ul>
+            </article>
 
-                <article class="service-node card">
-                    <div class="node-icon">🛋️</div>
-                    <h3>Ameublement</h3>
-                    <p>Housses de canapé, rideaux, voilages, matelas…</p>
-                </article>
+            <article class="service-node card node-2">
+                <div class="node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 15h16v4H4z"/><path d="M6 15v-4h12v4"/><path d="M8 11V8h8v3"/></svg>
+                </div>
+                <h3>Ameublement</h3>
+                <p>Housses de canapé, rideaux, voilages, matelas…</p>
+            </article>
 
-                <article class="service-node card">
-                    <div class="node-icon">📋</div>
-                    <h3>Suivi de vos linges</h3>
-                    <p>En temps réel &amp;</p>
-                    <p>Pickup &amp; Delivery 24h <span class="node-light">via notre box</span></p>
-                </article>
-            </div>
+            <article class="service-node card node-3">
+                <div class="node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="5" y="4" width="10" height="14" rx="2"/><path d="M8 8h4M8 11h4M8 14h3"/><path d="M16 13h4v5h-4z"/></svg>
+                </div>
+                <h3>Suivi de vos linges</h3>
+                <p>En temps réel &amp;</p>
+                <p>Pickup &amp; Delivery 24h <span class="node-light">via notre box</span></p>
+            </article>
 
-            <div class="services-column right">
-                <article class="service-node card">
-                    <div class="node-icon">🧼</div>
-                    <h3>Blanchisserie</h3>
-                    <p>Draps, nappes, couettes, serviettes…</p>
-                </article>
+            <article class="service-node card node-4">
+                <div class="node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 8h1"/></svg>
+                </div>
+                <h3>Blanchisserie</h3>
+                <p>Draps, nappes, couettes, serviettes…</p>
+            </article>
 
-                <article class="service-node card">
-                    <div class="node-icon">🧺</div>
-                    <h3>Entretien tapis</h3>
-                    <p>de tout type et de toute taille</p>
-                </article>
+            <article class="service-node card node-5">
+                <div class="node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 16h16v3H4z"/><path d="M6 13h12v3H6z"/><path d="M8 10h8v3H8z"/></svg>
+                </div>
+                <h3>Entretien tapis</h3>
+                <p>de tout type et de toute taille</p>
+            </article>
 
-                <article class="service-node card">
-                    <div class="node-icon">🤝</div>
-                    <h3>Service Entreprises</h3>
-                    <p>Collaborations B2B</p>
-                </article>
-            </div>
+            <article class="service-node card node-6">
+                <div class="node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 12l-2-2a2 2 0 0 1 3-3l2 2"/><path d="M16 12l2-2a2 2 0 0 0-3-3l-2 2"/><path d="M9 13l3 3l3-3"/></svg>
+                </div>
+                <h3>Service Entreprises</h3>
+                <p>Collaborations B2B</p>
+            </article>
 
-            <article class="service-node card service-bottom-center">
-                <div class="node-icon">🚚</div>
+            <article class="service-node card node-7">
+                <div class="node-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 8h11l3 3h2v5h-2a2 2 0 0 1-4 0H10a2 2 0 0 1-4 0H4z"/><circle cx="8" cy="16" r="1.5"/><circle cx="16" cy="16" r="1.5"/></svg>
+                </div>
                 <h3>ITRI Clean</h3>
                 <p>Collecte et Livraison express</p>
             </article>
