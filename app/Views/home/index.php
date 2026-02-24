@@ -55,7 +55,7 @@
         </div>
     </section>
 
-    <section id="services" class="container section section-target reveal">
+    <section id="services" class="container section services-section section-target reveal">
         <h2>Services</h2>
         <div class="services-infographic">
             <div class="services-ring" aria-hidden="true"></div>
