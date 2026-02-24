@@ -57,13 +57,69 @@
 
     <section id="services" class="container section section-target reveal">
         <h2>Services</h2>
-        <div class="services-grid">
-            <?php foreach ($site['services'] as $index => $service): ?>
-                <article class="card service-card <?= $index === 6 ? 'featured' : '' ?>">
-                    <h3><?= esc($service) ?></h3>
-                    <p><?= $index === 6 ? 'Accès autonome et sécurisé pour dépôt et retrait, même tard le soir.' : 'Un service soigné, adapté à vos textiles et à vos exigences de confort.' ?></p>
+        <div class="services-infographic">
+            <div class="services-ring" aria-hidden="true"></div>
+
+            <div class="services-center card">
+                <div class="itri-mark" aria-hidden="true">🧺</div>
+                <p class="itri-title">ITRI</p>
+                <span class="itri-line" aria-hidden="true"></span>
+                <p class="itri-subtitle">L’atelier du pressing</p>
+            </div>
+
+            <div class="services-column left">
+                <article class="service-node card">
+                    <div class="node-icon">🫧</div>
+                    <h3>Pressing naturel</h3>
+                    <p class="node-subtitle">Aqua nettoyage</p>
+                    <ul class="node-list">
+                        <li>✓ Écologique</li>
+                        <li>✓ Sans produits toxiques</li>
+                        <li>✓ Hypoallergénique</li>
+                        <li>✓ Délicat pour les tissus</li>
+                        <li>✓ Respecte les couleurs</li>
+                    </ul>
                 </article>
-            <?php endforeach; ?>
+
+                <article class="service-node card">
+                    <div class="node-icon">🛋️</div>
+                    <h3>Ameublement</h3>
+                    <p>Housses de canapé, rideaux, voilages, matelas…</p>
+                </article>
+
+                <article class="service-node card">
+                    <div class="node-icon">📋</div>
+                    <h3>Suivi de vos linges</h3>
+                    <p>En temps réel &amp;</p>
+                    <p>Pickup &amp; Delivery 24h <span class="node-light">via notre box</span></p>
+                </article>
+            </div>
+
+            <div class="services-column right">
+                <article class="service-node card">
+                    <div class="node-icon">🧼</div>
+                    <h3>Blanchisserie</h3>
+                    <p>Draps, nappes, couettes, serviettes…</p>
+                </article>
+
+                <article class="service-node card">
+                    <div class="node-icon">🧺</div>
+                    <h3>Entretien tapis</h3>
+                    <p>de tout type et de toute taille</p>
+                </article>
+
+                <article class="service-node card">
+                    <div class="node-icon">🤝</div>
+                    <h3>Service Entreprises</h3>
+                    <p>Collaborations B2B</p>
+                </article>
+            </div>
+
+            <article class="service-node card service-bottom-center">
+                <div class="node-icon">🚚</div>
+                <h3>ITRI Clean</h3>
+                <p>Collecte et Livraison express</p>
+            </article>
         </div>
     </section>
 
