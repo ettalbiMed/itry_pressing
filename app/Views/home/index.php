@@ -126,7 +126,7 @@
     </section>
 
 
-    <section class="service-steps-maquette section-target reveal" aria-label="La propreté chez vous en 3 étapes">
+    <section id="delivery" class="service-steps-maquette section-target reveal" aria-label="La propreté chez vous en 3 étapes">
         <div class="service-steps-maquette__inner">
             <header class="service-steps-maquette__hero">
                 <h1>ITRI CLEAN</h1>
@@ -212,7 +212,7 @@
         </div>
     </section>
 
-    <section id="delivery" class="container section section-target reveal">
+    <section id="ondelivery" class="hide container section section-target reveal">
         <h2>Votre pressing à domicile à Témara <span class="price-badge">à partir de 100 Dh</span></h2>
         <div class="steps grid-3">
             <article class="card"><h3>1. Commande</h3><p>Appelez-nous ou écrivez sur WhatsApp pour réserver.</p><p><a class="btn" href="tel:<?= esc($site['contact']['phone']) ?>">Appeler</a> <a class="btn btn-secondary" href="https://wa.me/<?= esc($site['contact']['whatsapp']) ?>">WhatsApp</a></p></article>
@@ -230,9 +230,11 @@
     <section id="gallery" class="container section section-target reveal">
         <h2>Galerie / Social</h2>
         <div class="gallery-grid">
-            <?php for ($i = 1; $i <= 12; $i++): ?>
+            <?php for ($i = 1; $i <= 6; $i++): ?>
                 <figure class="gallery-item card">
-                    <img src="/assets/img/gallery/gallery-<?= $i ?>.svg" alt="Visuel atelier pressing Témara #<?= $i ?>" width="400" height="400" loading="lazy">
+                    <a href="<?= esc($site['socials']['instagram']) ?>" target="_blank" rel="noopener" aria-label="Voir sur Instagram">
+                        <img src="/assets/img/gallery/gallery-<?= $i ?>.svg" alt="Visuel atelier pressing Témara #<?= $i ?>" width="400" height="400" loading="lazy">
+                    </a>
                     <figcaption>Instant atelier #<?= $i ?> · Soin textile premium à Témara.</figcaption>
                 </figure>
             <?php endfor; ?>
@@ -240,38 +242,40 @@
         <a class="btn" href="<?= esc($site['socials']['instagram']) ?>">Suivez-nous</a>
     </section>
 
-    <section id="faq" class="container section section-target reveal">
+    <section id="faq" class="hide container section section-target reveal">
         <h2>FAQ</h2>
         <?php foreach ($site['faq'] as $item): ?>
             <details class="faq-item card"><summary><?= esc($item['q']) ?></summary><p><?= esc($item['a']) ?></p></details>
         <?php endforeach; ?>
     </section>
 
-    <section id="contact" class="container section section-target reveal">
-        <h2>Contact</h2>
-        <?php if (session('success')): ?><p class="flash success"><?= esc(session('success')) ?></p><?php endif; ?>
-        <?php if (session('error')): ?><p class="flash error"><?= esc(session('error')) ?></p><?php endif; ?>
-        <div class="contact-grid">
-            <div class="card" id="address-card">
-                <h3><?= esc($site['siteName']) ?></h3>
-                <p>Ville: <?= esc($site['city']) ?></p>
-                <p>Téléphone: <a href="tel:<?= esc($site['contact']['phone']) ?>">Appeler</a></p>
-                <p>WhatsApp: <a href="https://wa.me/<?= esc($site['contact']['whatsapp']) ?>">Écrire</a></p>
-                <p>Email: <a href="mailto:contact@itriclean.ma">contact@itriclean.ma</a></p>
-                <p>Adresse: Boulevard Hassan 2, Témara</p>
-                <p>Horaires: du lundi à samedi de 8:30 à 21h<br>Dimanche de 10h à 20h</p>
-                <p><a href="https://maps.google.com" target="_blank" rel="noopener">Itinéraire Google Maps</a></p>
-                <iframe title="Carte Témara" src="https://maps.google.com/maps?q=Temara&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    <section id="contact" class="section section-target reveal">
+        <div class="container">
+            <h2>Contact</h2>
+            <?php if (session('success')): ?><p class="flash success"><?= esc(session('success')) ?></p><?php endif; ?>
+            <?php if (session('error')): ?><p class="flash error"><?= esc(session('error')) ?></p><?php endif; ?>
+            <div class="contact-grid">
+                <div class="card" id="address-card">
+                    <h3><?= esc($site['siteName']) ?></h3>
+                    <p>Ville: <?= esc($site['city']) ?></p>
+                    <p>Téléphone: <a href="tel:<?= esc($site['contact']['phone']) ?>">Appeler</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/<?= esc($site['contact']['whatsapp']) ?>">Écrire</a></p>
+                    <p>Email: <a href="mailto:contact@itriclean.ma">contact@itriclean.ma</a></p>
+                    <p>Adresse: Boulevard Hassan 2, Témara</p>
+                    <p>Horaires: du lundi à samedi de 8:30 à 21h<br>Dimanche de 10h à 20h</p>
+                    <p><a href="https://maps.google.com" target="_blank" rel="noopener">Itinéraire Google Maps</a></p>
+                    <iframe title="Carte Témara" src="https://maps.google.com/maps?q=Temara&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+                </div>
+                <form class="card" method="post" action="/contact">
+                    <?= csrf_field() ?>
+                    <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
+                    <label>Nom<input type="text" name="name" required maxlength="120" value="<?= esc(old('name')) ?>"></label>
+                    <label>Téléphone<input type="tel" name="phone" required maxlength="30" value="<?= esc(old('phone')) ?>"></label>
+                    <label>Email (optionnel)<input type="email" name="email" maxlength="160" value="<?= esc(old('email')) ?>"></label>
+                    <label>Message<input type="text" name="message" maxlength="1000" value="<?= esc(old('message')) ?>"></label>
+                    <button class="btn" type="submit">Envoyer</button>
+                </form>
             </div>
-            <form class="card" method="post" action="/contact">
-                <?= csrf_field() ?>
-                <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
-                <label>Nom<input type="text" name="name" required maxlength="120" value="<?= esc(old('name')) ?>"></label>
-                <label>Téléphone<input type="tel" name="phone" required maxlength="30" value="<?= esc(old('phone')) ?>"></label>
-                <label>Email (optionnel)<input type="email" name="email" maxlength="160" value="<?= esc(old('email')) ?>"></label>
-                <label>Message<input type="text" name="message" maxlength="1000" value="<?= esc(old('message')) ?>"></label>
-                <button class="btn" type="submit">Envoyer</button>
-            </form>
         </div>
     </section>
 </main>

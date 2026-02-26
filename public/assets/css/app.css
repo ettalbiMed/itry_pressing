@@ -33,6 +33,9 @@ img {
     border-radius: 14px
 }
 
+/* utility hide class */
+.hide{display:none !important}
+
 a {
     color: inherit
 }
@@ -575,7 +578,7 @@ h2 {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 1rem
 }
 
@@ -751,7 +754,7 @@ iframe {
 
 
 .service-steps-maquette {
-    --green: #3B6553;
+    --green: var(--brand);
     --step-text: #1f2a26;
     --step-muted: #6f7b78;
     --step-muted2: #9aa3a1;
@@ -902,4 +905,29 @@ iframe {
     .service-steps-maquette__arrow {
         display: none;
     }
+}
+
+/* Make contact section background white like delivery */
+#contact{
+    background: #fff;
+}
+
+/* Reduce padding/margins for contact section to make it tighter */
+#contact{
+    padding: 40px 0; /* smaller vertical padding than default .section */
+}
+#contact .container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#contact h2{
+    margin-top: 0.2rem;
+    margin-bottom: 0.6rem;
+    font-size: clamp(1.4rem,2.6vw,1.8rem);
+}
+#contact .contact-grid{
+    gap: .6rem;
+}
+#contact .card{
+    padding: .8rem; /* slightly reduced card padding inside contact */
 }
