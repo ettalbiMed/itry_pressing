@@ -35,6 +35,10 @@ class Site extends BaseConfig
             'instagram' => 'https://instagram.com/example',
             'facebook' => 'https://facebook.com/example',
         ],
+        'mobileApp' => [
+            'androidUrl' => 'https://play.google.com/store/apps/details?id=com.itriclean.app',
+            'iosUrl' => 'https://apps.apple.com/app/id0000000000',
+        ],
         'services' => [
             'Pressing naturel (procédés doux)',
             'Blanchisserie',
