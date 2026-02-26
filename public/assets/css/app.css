@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
 :root {
     --brand: #0B2F1A;
     --ivory: #F6F1E6;
@@ -40,6 +41,8 @@ a {
     margin: auto
 }
 
+.itri-subtitle{font-size:1rem;color:var(--brand);margin:0}
+.momo-signature-regular{font-family:'Momo Signature',cursive;font-weight:400;font-style:normal}
 .section {
     padding: 84px 0
 }
@@ -359,7 +362,7 @@ h2 {
 .services-center {
     position: absolute;
     left: 50%;
-    top: 52%;
+    top: 56%;
     transform: translate(-50%,-50%);
     text-align: center;
     z-index: 3;
@@ -656,7 +659,7 @@ iframe {
 
 .itri-mark img.itri-img {
     width: 299px;
-    height: 105px;
+    height: 163px;
     object-fit: contain
 }
 

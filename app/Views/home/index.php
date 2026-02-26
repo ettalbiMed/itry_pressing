@@ -64,10 +64,10 @@
 
             <div class="services-center card">
                 <div class="itri-mark" aria-hidden="true">
-                    <img src="/assets/img/Logo-Horizontal-Green.svg" alt="Logo Atelier Émeraude" width="260" height="260" class="itri-img">
+                    <img src="/assets/img/Logo-symbole-Green.svg" alt="Logo Atelier Émeraude" width="260" height="260" class="itri-img">
                 </div>
                 <span class="itri-line" aria-hidden="true"></span>
-                <p class="itri-subtitle">L’atelier du pressing</p>
+                <p class="itri-subtitle momo-signature-regular">ITRI CLEAN</p>
                 
             </div>
 
@@ -140,8 +140,7 @@
         </div>
     </section>
 
-    <section class="slogan reveal"><p><span>CLEAN IS</span><span>THE NEW</span><span>COOL</span></p></section>
-
+    
     <section id="gallery" class="container section section-target reveal">
         <h2>Galerie / Social</h2>
         <div class="gallery-grid">
