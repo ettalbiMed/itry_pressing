@@ -189,10 +189,35 @@
     </section>
 </main>
 <footer class="footer">
-    <div class="container">
-        <p>Pressing éco-responsable premium à Témara. Service local, discret et fiable.</p>
-        <p><?= esc($site['siteName']) ?> · <?= esc($site['contact']['address']) ?> · <?= esc($site['contact']['phone']) ?></p>
-        <p>© <?= date('Y') ?> <?= esc($site['siteName']) ?> · Mentions légales · Politique confidentialité</p>
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <img src="/assets/img/Logo-Horizontal-Green.svg" alt="Logo Atelier Émeraude" width="170" height="68">
+            <p>Pressing éco-responsable premium à Témara. Service local, discret et fiable.</p>
+            <p class="footer-contact"><?= esc($site['siteName']) ?> · <?= esc($site['contact']['address']) ?> · <a href="tel:<?= esc($site['contact']['phone']) ?>"><?= esc($site['contact']['phone']) ?></a></p>
+        </div>
+        <div class="footer-links">
+            <h3>Liens utiles</h3>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#delivery">Collecte & livraison</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-app">
+            <h3>Application mobile</h3>
+            <p>Téléchargez notre application pour réserver votre collecte en quelques clics.</p>
+            <div class="store-buttons">
+                <a class="store-btn" href="<?= esc($site['mobileApp']['androidUrl']) ?>" target="_blank" rel="noopener">Télécharger sur Android</a>
+                <a class="store-btn" href="<?= esc($site['mobileApp']['iosUrl']) ?>" target="_blank" rel="noopener">Télécharger sur iOS</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© <?= date('Y') ?> <?= esc($site['siteName']) ?> · Mentions légales · Politique confidentialité</p>
+        </div>
     </div>
 </footer>
+
 <?= $this->endSection() ?>
