@@ -26,7 +26,7 @@
 <main>
     <section id="home" class="hero section-target">
         <div class="hero-carousel" data-carousel>
-            <div class="hero-slide is-active"><img src="/assets/img/hero/hero-1.svg" alt="Atelier pressing éco-responsable à Témara" width="1600" height="900" fetchpriority="high"></div>
+            <div class="hero-slide is-active"><img src="/assets/img/hero/slide_home_1.png" alt="Atelier pressing éco-responsable à Témara" width="1600" height="900" fetchpriority="high"></div>
             <div class="hero-slide"><img src="/assets/img/hero/hero-2.svg" alt="Collecte et livraison Témara" width="1600" height="900" loading="lazy"></div>
             <div class="hero-slide"><img src="/assets/img/hero/hero-3.svg" alt="Box 24/7 Témara sécurisée" width="1600" height="900" loading="lazy"></div>
             <button class="carousel-arrow prev" aria-label="Slide précédente">‹</button>
