@@ -9,9 +9,11 @@
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#services">Services</a></li>
                 <li class="logo-slot">
-                    <a href="#home" class="logo logo--enter" aria-label="Accueil">
-                        <img src="/assets/img/logo.svg" alt="Logo Atelier Émeraude" width="110" height="64">
-                    </a>
+                    <div class="logo-bg">
+                        <a href="#home" class="logo logo--enter" aria-label="Accueil">
+                            <img src="/assets/img/Logo-Horizontal-Green.svg" alt="Logo Atelier Émeraude" width="150" height="60">
+                        </a>
+                    </div>
                 </li>
                 <li><a href="#delivery">Delivery</a></li>
                 <li><a href="#gallery">Galerie</a></li>
@@ -62,16 +64,11 @@
 
             <div class="services-center card">
                 <div class="itri-mark" aria-hidden="true">
-                    <svg viewBox="0 0 64 64" role="img" aria-label="Logo ITRI">
-                        <path d="M12 22h40" />
-                        <path d="M20 22c0 10 6 16 12 20c6-4 12-10 12-20" />
-                        <path d="M32 42v10" />
-                        <path d="M39 14c4 1 7 4 8 8" />
-                    </svg>
+                    <img src="/assets/img/Logo-Horizontal-Green.svg" alt="Logo Atelier Émeraude" width="260" height="260" class="itri-img">
                 </div>
-                <p class="itri-title">ITRI</p>
                 <span class="itri-line" aria-hidden="true"></span>
                 <p class="itri-subtitle">L’atelier du pressing</p>
+                
             </div>
 
             <article class="service-node card node-1">
@@ -90,7 +87,7 @@
                     <svg viewBox="0 0 24 24"><path d="M4 15h16v4H4z"/><path d="M6 15v-4h12v4"/><path d="M8 11V8h8v3"/></svg>
                 </div>
                 <h3>Ameublement</h3>
-                <p>Housses de canapé, rideaux, voilages, matelas…</p>
+                <p>Housses de canapé, rideaux, voilages, matelas… et entretien tapis</p>
             </article>
 
             <article class="service-node card node-3">
@@ -110,15 +107,8 @@
                 <p>Draps, nappes, couettes, serviettes…</p>
             </article>
 
-            <article class="service-node card node-5">
-                <div class="node-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M4 16h16v3H4z"/><path d="M6 13h12v3H6z"/><path d="M8 10h8v3H8z"/></svg>
-                </div>
-                <h3>Entretien tapis</h3>
-                <p>de tout type et de toute taille</p>
-            </article>
 
-            <article class="service-node card node-6">
+            <article class="service-node card node-5">
                 <div class="node-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M8 12l-2-2a2 2 0 0 1 3-3l2 2"/><path d="M16 12l2-2a2 2 0 0 0-3-3l-2 2"/><path d="M9 13l3 3l3-3"/></svg>
                 </div>
@@ -126,7 +116,7 @@
                 <p>Collaborations B2B</p>
             </article>
 
-            <article class="service-node card node-7">
+            <article class="service-node card node-6">
                 <div class="node-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M4 8h11l3 3h2v5h-2a2 2 0 0 1-4 0H10a2 2 0 0 1-4 0H4z"/><circle cx="8" cy="16" r="1.5"/><circle cx="16" cy="16" r="1.5"/></svg>
                 </div>
@@ -182,9 +172,9 @@
                 <p>Ville: <?= esc($site['city']) ?></p>
                 <p>Téléphone: <a href="tel:<?= esc($site['contact']['phone']) ?>">Appeler</a></p>
                 <p>WhatsApp: <a href="https://wa.me/<?= esc($site['contact']['whatsapp']) ?>">Écrire</a></p>
-                <p>Email: <a href="mailto:<?= esc($site['contact']['email']) ?>"><?= esc($site['contact']['email']) ?></a></p>
-                <p>Adresse: <?= esc($site['contact']['address']) ?> — Box 24/7 disponible ici</p>
-                <p>Horaires: Lun–Ven 08h–20h, Sam 09h–18h, Box 24/7 active</p>
+                <p>Email: <a href="mailto:contact@itriclean.ma">contact@itriclean.ma</a></p>
+                <p>Adresse: Boulevard Hassan 2, Témara</p>
+                <p>Horaires: du lundi à samedi de 8:30 à 21h<br>Dimanche de 10h à 20h</p>
                 <p><a href="https://maps.google.com" target="_blank" rel="noopener">Itinéraire Google Maps</a></p>
                 <iframe title="Carte Témara" src="https://maps.google.com/maps?q=Temara&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
             </div>

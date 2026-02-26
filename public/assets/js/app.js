@@ -41,6 +41,7 @@ window.addEventListener('scroll', () => {
   const compact = window.scrollY > 10;
   nav?.classList.toggle('nav-scrolled', compact);
   logo?.classList.toggle('logo--compact', compact);
+  logo?.classList.toggle('logo--scrolled', compact);
 });
 
 const c = document.querySelector('[data-carousel]');
