@@ -125,6 +125,93 @@
         </div>
     </section>
 
+
+    <section class="service-steps-maquette section-target reveal" aria-label="La propreté chez vous en 3 étapes">
+        <div class="service-steps-maquette__inner">
+            <header class="service-steps-maquette__hero">
+                <h1>ITRI CLEAN</h1>
+                <p class="service-steps-maquette__strapline">VOTRE PRESSING ÉCO-RESPONSABLE À DOMICILE</p>
+                <p class="service-steps-maquette__note">* à partir de 79Dh de commande</p>
+            </header>
+
+            <div class="service-steps-maquette__content">
+                <h2>La propreté chez vous en 3 étapes...</h2>
+                <p class="service-steps-maquette__subtitle">3 étapes simples pour nettoyer vos articles</p>
+
+                <div class="service-steps-maquette__row">
+                    <article class="service-steps-maquette__card">
+                        <div class="service-steps-maquette__icon-circle" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="img" aria-label="Téléphone">
+                                <path d="M22 11c8 0 15 7 15 15" />
+                                <path d="M22 5c11 0 20 9 20 20" />
+                                <path d="M24 22c1 8 10 17 18 18l5-5c1-1 3-1 4 0l7 4c1 1 2 3 1 5l-2 6c-1 3-4 5-8 5-24 0-43-19-43-43 0-4 2-7 5-8l6-2c2-1 4 0 5 1l4 7c1 1 1 3 0 4l-5 5Z" />
+                            </svg>
+                        </div>
+                        <h3>1-Commande</h3>
+                        <p>
+                            Réservez votre collecte par<br>
+                            téléphone au <span class="service-steps-maquette__accent">0522993922</span> ou<br>
+                            sur WhatsApp au <span class="service-steps-maquette__accent">0667638300</span><br>
+                            en suivant les instructions indiquées
+                        </p>
+                    </article>
+
+                    <div class="service-steps-maquette__arrow" aria-hidden="true">
+                        <svg viewBox="0 0 190 20" preserveAspectRatio="none">
+                            <line x1="0" y1="10" x2="174" y2="10" />
+                            <polyline points="166,3 188,10 166,17" />
+                        </svg>
+                    </div>
+
+                    <article class="service-steps-maquette__card">
+                        <div class="service-steps-maquette__icon-circle" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="img" aria-label="Camionnette éco">
+                                <rect x="6" y="27" width="30" height="16" rx="2" />
+                                <path d="M36 31h10l8 7v5H36z" />
+                                <circle cx="18" cy="48" r="5" />
+                                <circle cx="46" cy="48" r="5" />
+                                <path d="M26 20c3-5 8-7 12-7-1 5-4 9-10 10" />
+                                <path d="M28 17c4 1 7 4 8 8" />
+                            </svg>
+                        </div>
+                        <h3>2-Collecte</h3>
+                        <p>
+                            Notre livreur vient chez vous<br>
+                            à la date et horaire convenus<br>
+                            pour récupérer vos articles
+                        </p>
+                    </article>
+
+                    <div class="service-steps-maquette__arrow" aria-hidden="true">
+                        <svg viewBox="0 0 190 20" preserveAspectRatio="none">
+                            <line x1="0" y1="10" x2="174" y2="10" />
+                            <polyline points="166,3 188,10 166,17" />
+                        </svg>
+                    </div>
+
+                    <article class="service-steps-maquette__card">
+                        <div class="service-steps-maquette__icon-circle" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="img" aria-label="Cintre et chemise">
+                                <path d="M24 20c0-4 3-7 8-7s8 3 8 7c0 4-4 4-4 8" />
+                                <path d="M6 34h52" />
+                                <path d="M6 34 26 25h12l20 9" />
+                                <path d="M14 34v15h36V34" />
+                                <path d="M26 25v24" />
+                                <path d="M38 25v24" />
+                            </svg>
+                        </div>
+                        <h3>3-Livraison</h3>
+                        <p>
+                            Nous prenons soin de vos articles<br>
+                            puis nous vous les livrons à<br>
+                            domicile selon vos préférences
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="delivery" class="container section section-target reveal">
         <h2>Votre pressing à domicile à Témara <span class="price-badge">à partir de 100 Dh</span></h2>
         <div class="steps grid-3">
