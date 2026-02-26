@@ -60,18 +60,10 @@
     <section id="services" class="container section services-section section-target reveal">
         <h2>Services</h2>
         <div class="services-infographic">
-            <div class="services-ring" aria-hidden="true"></div>
+            <div class="spin-layer">
+                <div class="services-ring" aria-hidden="true"></div>
 
-            <div class="services-center card">
-                <div class="itri-mark" aria-hidden="true">
-                    <img src="/assets/img/Logo-symbole-Green.svg" alt="Logo Atelier Émeraude" width="260" height="260" class="itri-img">
-                </div>
-                <span class="itri-line" aria-hidden="true"></span>
-                <p class="itri-subtitle momo-signature-regular">ITRI CLEAN</p>
-                
-            </div>
-
-            <article class="service-node card node-1">
+                <article class="service-node card node-1">
                 <div class="node-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="M12 10h5M12 14h5M7 14h2"/></svg>
                 </div>
@@ -107,7 +99,6 @@
                 <p>Draps, nappes, couettes, serviettes…</p>
             </article>
 
-
             <article class="service-node card node-5">
                 <div class="node-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M8 12l-2-2a2 2 0 0 1 3-3l2 2"/><path d="M16 12l2-2a2 2 0 0 0-3-3l-2 2"/><path d="M9 13l3 3l3-3"/></svg>
@@ -123,6 +114,14 @@
                 <h3>ITRI Clean</h3>
                 <p>Collecte et Livraison express</p>
             </article>
+        </div>
+
+        <div class="services-center card">
+            <div class="itri-mark" aria-hidden="true">
+                <img src="/assets/img/Logo-symbole-Green.svg" alt="Logo Atelier Émeraude" width="260" height="260" class="itri-img">
+            </div>
+            <span class="itri-line" aria-hidden="true"></span>
+            <p class="itri-subtitle momo-signature-regular">ITRI CLEAN</p>
         </div>
     </section>
 

@@ -348,7 +348,6 @@ h2 {
     inset: 11%;
     border: 1px solid rgba(199,167,106,.5);
     border-radius: 50%;
-    transform: rotate(-8deg)
 }
 
 .services-ring:after {
@@ -358,6 +357,9 @@ h2 {
     border: 1px dashed rgba(199,167,106,.35);
     border-radius: 50%
 }
+
+/* visible marker to show rotation */
+.services-ring:before{content:"";position:absolute;left:50%;top:-6px;transform:translateX(-50%);width:12px;height:12px;background:var(--brand);border-radius:50%;box-shadow:0 0 0 4px rgba(11,47,26,0.06);z-index:5}
 
 .services-center {
     position: absolute;
@@ -673,6 +675,12 @@ iframe {
     min-width: 0 !important;
     border-radius: 0 !important
 }
+
+/* rotate the services infographic like a washing machine; counter-rotate nodes and center to keep them upright */
+.services-ring{transform-origin:50% 50%;animation:spinMachine 18s linear infinite;will-change:transform;animation-play-state:running}
+.service-node{transform-origin:50% 50%;animation:none}
+.services-center{animation:none !important}
+@keyframes spinMachine{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 
 @media (max-width: 900px) {
     .grid-3,.services-grid,.gallery-grid,.contact-grid {
